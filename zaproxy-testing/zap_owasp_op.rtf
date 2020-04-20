@@ -1,0 +1,1727 @@
+Found Java version 11.0.6
+Available memory: 1991 MB
+Using JVM args: -Xmx497m
+0 [main] INFO org.zaproxy.zap.GuiBootstrap  - OWASP ZAP 2.9.0 started 17/04/2020, 01:26:49 with home /home/kali/.ZAP/
+257 [AWT-EventQueue-0] INFO org.parosproxy.paros.network.SSLConnector  - Reading supported SSL/TLS protocols...
+260 [AWT-EventQueue-0] INFO org.parosproxy.paros.network.SSLConnector  - Using a SSLEngine...
+409 [AWT-EventQueue-0] INFO org.parosproxy.paros.network.SSLConnector  - Done reading supported SSL/TLS protocols: [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2, TLSv1.3]
+417 [AWT-EventQueue-0] INFO org.parosproxy.paros.extension.option.OptionsParamCertificate  - Unsafe SSL renegotiation disabled.
+1064 [AWT-EventQueue-0] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - dataFileCache open start
+1074 [AWT-EventQueue-0] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - dataFileCache open end
+1496 [AWT-EventQueue-0] INFO org.parosproxy.paros.view.View  - Initialising View
+3198 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.control.ExtensionFactory  - Loading extensions
+4829 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.control.ExtensionFactory  - Installed add-ons: [[id=alertFilters, version=10.0.0], [id=ascanrules, version=34.0.0], [id=bruteforce, version=9.0.0], [id=diff, version=10.0.0], [id=directorylistv1, version=4.0.0], [id=fuzz, version=12.0.0], [id=gettingStarted, version=11.0.0], [id=help, version=10.0.0], [id=importurls, version=7.0.0], [id=invoke, version=10.0.0], [id=onlineMenu, version=7.0.0], [id=openapi, version=15.0.0], [id=replacer, version=8.0.0], [id=reveal, version=3.0.0], [id=saverawmessage, version=5.0.0], [id=savexmlmessage, version=0.1.0], [id=scripts, version=26.0.0], [id=tips, version=7.0.0], [id=websocket, version=21.0.0]]
+5073 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.control.ExtensionFactory  - Extensions loaded
+6039 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Allows ZAP to check for updates
+6213 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Options Extension
+6835 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Edit Menu Extension
+6848 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Provides a rest based API for controlling and accessing ZAP
+6927 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Session State Extension
+6928 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Report Extension
+6946 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing History Extension
+7180 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Show hidden fields and enable disabled fields
+7204 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Search messages for strings and regular expressions
+7353 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Encode/Decode/Hash...
+7376 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Allows you to intercept and modify requests and responses
+7474 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Passive scanner
+7513 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.pscan.ExtensionPassiveScan  - loaded passive scan rule: Script Passive Scan Rules
+7515 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.pscan.ExtensionPassiveScan  - loaded passive scan rule: Stats Passive Scan Rule
+7579 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Allows you to view and manage alerts
+7734 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Active scanner, heavily based on the original Paros active scanner, but with additional tests added
+7895 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Spider used for automatically finding URIs on a site
+8069 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing A set of common popup menus for miscellaneous tasks
+8093 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Forced browsing of files and directories using code from the OWASP DirBuster tool
+8183 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Manual Request Editor Extension
+8191 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Compares 2 sessions and generates an HTML file showing the differences
+8219 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Invoke external applications passing context related information such as URLs and parameters
+8271 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Handles anti cross site request forgery (CSRF) tokens
+8327 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Authentication Extension
+8438 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.authentication.ExtensionAuthentication  - Loaded authentication method types: [Form-based Authentication, HTTP/NTLM Authentication, Manual Authentication, Script-based Authentication, JSON-based Authentication]
+8514 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Creates a dynamic SSL certificate to allow SSL communications to be intercepted without warnings being generated by the browser
+8980 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Logs errors to the Output tab in development mode only
+8993 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Users Extension
+9013 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Summarise and analyse FORM and URL parameters as well as cookies
+9100 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Script integration
+9193 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Scripting console, supports all JSR 223 scripting languages
+9761 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Forced User Extension
+9811 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Extension handling HTTP sessions
+9913 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing ExtensionDiff
+9928 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing HTTP Panel Post Table View Extension
+9976 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Session Management Extension
+9984 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.sessions.ExtensionSessionManagement  - Loaded session management method types: [Cookie-based Session Management, HTTP Authentication Session Management, Script-based Session Management]
+10003 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing HTTP Panel Form Table View Extension
+10076 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Capture messages from WebSockets with the ability to set breakpoints.
+10451 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Allows you to import a file containing URLs which ZAP will access, adding them to the Sites tree
+10468 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Core UI related functionality.
+10488 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Authorization Extension
+10516 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Manages the local proxy configurations
+10627 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Handles adding Global Excluded URLs
+10689 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Adds menu item to refresh the Sites tree
+10704 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing OWASP ZAP User Guide
+11136 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Provides a URL suitable for calling from target sites
+11216 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Allows you to configure which extensions are loaded when ZAP starts
+11294 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Combined HTTP Panels Extension
+11378 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing HTTP Panel Hex View Extension
+11504 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing HTTP Panel Image View Extension
+11540 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing HTTP Panel Large Request View Extension
+11596 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing HTTP Panel Large Response View Extension
+11645 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing HTTP Panel Query Table View Extension
+11707 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing HTTP Panel Syntax Highlighter View Extension
+11935 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Adds support for configurable keyboard shortcuts for all of the ZAP menus.
+12006 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Active and passive rule configuration
+12168 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Statistics
+12237 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.stats.ExtensionStats  - Start recording in memory stats
+12239 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Active Scan Rules
+12257 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing ExtensionSaveRawHttpMessage
+12319 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing ExtensionSaveXMLHttpMessage
+12359 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Easy way to replace strings in requests and responses
+12411 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing The ZAP Getting Started Guide
+12430 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Allows you to spider and import OpenAPI (Swagger) definitions 
+12504 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing The Online menu links
+12550 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Provides the foundation for concrete message types (for example, HTTP, WebSockets) expose fuzzer implementations.
+12603 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Allows to fuzz HTTP messages.
+12727 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Tips and Tricks
+12760 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Allows to fuzz WebSocket messages.
+12765 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Context alert rules filter
+13010 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.callback.ExtensionCallback  - Started callback server on 0.0.0.0:38201
+13012 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.keyboard.ExtensionKeyboard  - Initializing keyboard shortcuts
+31196 [AWT-EventQueue-0] INFO org.parosproxy.paros.control.Control  - New Session
+31233 [AWT-EventQueue-0] INFO org.parosproxy.paros.control.Control  - Create and Open Untitled Db
+31252 [AWT-EventQueue-0] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - dataFileCache commit start
+31255 [AWT-EventQueue-0] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - dataFileCache commit end
+31265 [AWT-EventQueue-0] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - Database closed
+31588 [AWT-EventQueue-0] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - dataFileCache open start
+31590 [AWT-EventQueue-0] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - dataFileCache open end
+373484 [ZAP-ProxyThread-5] WARN org.parosproxy.paros.core.proxy.ProxyThread  - Failed to write/forward the HTTP response to the client: java.net.SocketException: Broken pipe (Write failed)
+374513 [ZAP-ProxyThread-6] WARN org.parosproxy.paros.core.proxy.ProxyThread  - Failed to write/forward the HTTP response to the client: java.net.SocketException: Broken pipe (Write failed)
+374522 [ZAP-ProxyThread-13] WARN org.parosproxy.paros.core.proxy.ProxyThread  - Failed to write/forward the HTTP response to the client: java.net.SocketException: Broken pipe (Write failed)
+374536 [ZAP-ProxyThread-8] WARN org.parosproxy.paros.core.proxy.ProxyThread  - Failed to write/forward the HTTP response to the client: java.net.SocketException: Broken pipe (Write failed)
+374547 [ZAP-ProxyThread-7] WARN org.parosproxy.paros.core.proxy.ProxyThread  - Failed to write/forward the HTTP response to the client: java.net.SocketException: Broken pipe (Write failed)
+374555 [ZAP-ProxyThread-10] WARN org.parosproxy.paros.core.proxy.ProxyThread  - Failed to write/forward the HTTP response to the client: java.net.SocketException: Broken pipe (Write failed)
+374997 [ZAP-ProxyThread-12] WARN org.parosproxy.paros.core.proxy.ProxyThread  - Failed to write/forward the HTTP response to the client: java.net.SocketException: Broken pipe (Write failed)
+375000 [ZAP-ProxyThread-9] WARN org.parosproxy.paros.core.proxy.ProxyThread  - Failed to write/forward the HTTP response to the client: java.net.SocketException: Broken pipe (Write failed)
+376010 [ZAP-ProxyThread-11] WARN org.parosproxy.paros.core.proxy.ProxyThread  - Failed to write/forward the HTTP response to the client: java.net.SocketException: Broken pipe (Write failed)
+376023 [ZAP-ProxyThread-14] WARN org.parosproxy.paros.core.proxy.ProxyThread  - Failed to write/forward the HTTP response to the client: java.net.SocketException: Broken pipe (Write failed)
+376023 [ZAP-ProxyThread-15] WARN org.parosproxy.paros.core.proxy.ProxyThread  - Failed to write/forward the HTTP response to the client: java.net.SocketException: Broken pipe (Write failed)
+376031 [ZAP-ProxyThread-16] WARN org.parosproxy.paros.core.proxy.ProxyThread  - Failed to write/forward the HTTP response to the client: java.net.SocketException: Broken pipe (Write failed)
+377023 [ZAP-ProxyThread-17] WARN org.parosproxy.paros.core.proxy.ProxyThread  - Failed to write/forward the HTTP response to the client: java.net.SocketException: Broken pipe (Write failed)
+663043 [ZAP-ProxyThread-24] WARN org.parosproxy.paros.core.proxy.ProxyThread  - Failed to write/forward the HTTP response to the client: java.net.SocketException: Broken pipe (Write failed)
+663354 [ZAP-ProxyThread-26] WARN org.parosproxy.paros.core.proxy.ProxyThread  - Failed to write/forward the HTTP response to the client: java.net.SocketException: Broken pipe (Write failed)
+663363 [ZAP-ProxyThread-25] WARN org.parosproxy.paros.core.proxy.ProxyThread  - Failed to write/forward the HTTP response to the client: java.net.SocketException: Broken pipe (Write failed)
+717150 [ZAP-ProxyThread-27] WARN org.parosproxy.paros.core.proxy.ProxyThread  - Failed to write/forward the HTTP response to the client: java.net.SocketException: Broken pipe (Write failed)
+717163 [ZAP-ProxyThread-28] WARN org.parosproxy.paros.core.proxy.ProxyThread  - Failed to write/forward the HTTP response to the client: java.net.SocketException: Broken pipe (Write failed)
+1234137 [ZAP-SpiderInitThread-0] INFO org.zaproxy.zap.extension.spider.SpiderThread  - Starting spidering scan on http://192.168..104/mutillidae at Fri Apr 17 01:47:23 EDT 2020
+1234144 [ZAP-SpiderInitThread-0] INFO org.zaproxy.zap.spider.Spider  - Spider initializing...
+1234260 [ZAP-SpiderInitThread-0] INFO org.zaproxy.zap.spider.Spider  - Starting spider...
+1235545 [ZAP-SpiderThreadPool-0-thread-2] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: while scanning for the next token
+found character '\t(TAB)' that cannot start any token. (Do not use \t(TAB) for indentation)
+ in 'string', line 1, column 1:
+    	
+    ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:418)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:227)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseImplicitDocumentStart.produce(ParserImpl.java:195)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:107)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1235546 [ZAP-SpiderThreadPool-0-thread-1] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: mapping values are not allowed here
+ in 'string', line 5, column 110:
+     ... ame UL (level) contain sub menus: http://www.dynamicdrive.com/fo ... 
+                                         ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:869)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:227)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:558)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:214)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1235602 [ZAP-SpiderThreadPool-0-thread-2] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser)
+ at [Source: (String)"	
+	/***********************************************
+	* Bookmark site script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+	* This notice MUST stay intact for legal use
+	* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+	***********************************************/
+	
+	/* Modified heavily by Jeremy Druin */
+	function bookmarkSite(){
+	
+		try{
+			var lURL = document.location;
+			var lTitle = "Mutillidae";
+				
+			if (window.sidebar){ 
+				// f"[truncated 564 chars]; line: 2, column: 3]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipComment(ReaderBasedJsonParser.java:2436)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd2(ReaderBasedJsonParser.java:2411)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2382)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:672)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1235602 [ZAP-SpiderThreadPool-0-thread-1] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser)
+ at [Source: (String)"//** Smooth Navigational Menu- By Dynamic Drive DHTML code library: http://www.dynamicdrive.com
+//** Script Download/ instructions page: http://www.dynamicdrive.com/dynamicindex1/ddlevelsmenu/
+//** Menu created: Nov 12, 2008
+
+//** Dec 12th, 08" (v1.01): Fixed Shadow issue when multiple LIs within the same UL (level) contain sub menus: http://www.dynamicdrive.com/forums/showthread.php?t=39177&highlight=smooth
+
+//** Feb 11th, 09" (v1.02): The currently active main menu item (LI A) now gets a CSS c"[truncated 8138 chars]; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipComment(ReaderBasedJsonParser.java:2436)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd2(ReaderBasedJsonParser.java:2411)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2362)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:672)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1235776 [ZAP-SpiderThreadPool-0-thread-1] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'window': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"window.sessionStorage.setItem("Secure.IsUserLoggedIn?", "No");
+window.sessionStorage.setItem("Secure.AuthenticationToken", "DU837HHFYTEYUE9S1934");
+window.localStorage.setItem("Secure.CurrentStateofHTML5Storage","Completely Insecure");"; line: 1, column: 7]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:722)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2868)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1914)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:773)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1235781 [ZAP-SpiderThreadPool-0-thread-2] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: mapping values are not allowed here
+ in 'string', line 9, column 8:
+     * Date: 2009-02-19 17:34:21 -0500 (Thu ... 
+           ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:869)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.peekToken(ScannerImpl.java:250)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseDocumentEnd.produce(ParserImpl.java:253)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.getEvent(ParserImpl.java:168)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:87)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1235786 [ZAP-SpiderThreadPool-0-thread-2] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser)
+ at [Source: (StringReader); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipComment(ReaderBasedJsonParser.java:2436)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd2(ReaderBasedJsonParser.java:2411)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2362)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:672)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1235844 [ZAP-SpiderThreadPool-0-thread-1] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: mapping values are not allowed here
+ in 'string', line 3, column 11:
+    // License: http://www.opensource.org/lice ... 
+              ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:869)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.peekToken(ScannerImpl.java:250)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseDocumentEnd.produce(ParserImpl.java:253)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.getEvent(ParserImpl.java:168)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:87)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1235849 [ZAP-SpiderThreadPool-0-thread-1] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser)
+ at [Source: (String)"// ColorBox v1.3.20.2 - jQuery lightbox plugin
+// (c) 2012 Jack Moore - jacklmoore.com
+// License: http://www.opensource.org/licenses/mit-license.php
+(function(a,b,c){function Z(c,d,e){var g=b.createElement(c);return d&&(g.id=f+d),e&&(g.style.cssText=e),a(g)}function $(a){var b=y.length,c=(Q+a)%b;return 0>c?b+c:c}function _(a,b){return Math.round((/%/.test(a)?("x"===b?z.width():z.height())/100:1)*parseInt(a,10))}function ab(a){return K.photo||/\.(gif|png|jp(e|g|eg)|bmp|ico)((#|\?).*)?$/i.test(a)"[truncated 9345 chars]; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipComment(ReaderBasedJsonParser.java:2436)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd2(ReaderBasedJsonParser.java:2411)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2362)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:672)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1235868 [ZAP-SpiderThreadPool-0-thread-2] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: mapping values are not allowed here
+ in 'string', line 5, column 48:
+     ... d under the MIT and GPL licenses:
+                                         ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:869)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.peekToken(ScannerImpl.java:250)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseDocumentEnd.produce(ParserImpl.java:253)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.getEvent(ParserImpl.java:168)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:87)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1235876 [ZAP-SpiderThreadPool-0-thread-2] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser)
+ at [Source: (String)"/**
+ * Hover balloon on elements without css and images.
+ *
+ * Copyright (c) 2011 Hayato Takenaka
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ * @author: Hayato Takenaka (http://urin.take-uma.net)
+ * @version: 0.3.0 - 2012/02/25
+**/
+;(function($) {
+	//-----------------------------------------------------------------------------
+	// Private
+	//-------------------------------------------"[truncated 10837 chars]; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipComment(ReaderBasedJsonParser.java:2436)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd2(ReaderBasedJsonParser.java:2411)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2362)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:672)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1235919 [ZAP-SpiderThreadPool-0-thread-2] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: mapping values are not allowed here
+ in 'string', line 12, column 8:
+     * Date: Tue Nov 13 2012 08:20:33 GMT-0 ... 
+           ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:869)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.peekToken(ScannerImpl.java:250)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseDocumentEnd.produce(ParserImpl.java:253)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.getEvent(ParserImpl.java:168)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:87)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1235943 [ZAP-SpiderThreadPool-0-thread-2] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser)
+ at [Source: (StringReader); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipComment(ReaderBasedJsonParser.java:2436)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd2(ReaderBasedJsonParser.java:2411)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2362)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:672)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1238872 [ZAP-SpiderThreadPool-0-thread-1] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: while parsing a block mapping
+ in 'string', line 1, column 1:
+    (function(b){b.gritter={};b.grit ... 
+    ^
+expected <block end>, but found '<scalar>'
+ in 'string', line 1, column 230:
+     ... r Error: "+d;(typeof(console)!="undefined"&&console.error)?conso ... 
+                                         ^
+
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:570)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:214)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1238881 [ZAP-SpiderThreadPool-0-thread-1] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('(' (code 40)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"(function(b){b.gritter={};b.gritter.options={position:"",class_name:"",fade_in_speed:"medium",fade_out_speed:1000,time:6000};b.gritter.add=function(f){try{return a.add(f||{})}catch(d){var c="Gritter Error: "+d;(typeof(console)!="undefined"&&console.error)?console.error(c,f):alert(c)}};b.gritter.remove=function(d,c){a.removeSpecific(d,c||{})};b.gritter.removeAll=function(c){a.stop(c||{})};var a={position:"",fade_in_speed:"",fade_out_speed:"",time:"",_custom_timer:0,_item_count:0,_is_setup:0,_tpl_"[truncated 3748 chars]; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1917)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:773)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1246597 [ZAP-SpiderThreadPool-0-thread-1] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: while scanning for the next token
+found character '\t(TAB)' that cannot start any token. (Do not use \t(TAB) for indentation)
+ in 'string', line 20, column 1:
+    	if (IE) { // grab the x-y pos.s ... 
+    ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:418)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.peekToken(ScannerImpl.java:250)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseDocumentEnd.produce(ParserImpl.java:253)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.getEvent(ParserImpl.java:168)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:87)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1246603 [ZAP-SpiderThreadPool-0-thread-1] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser)
+ at [Source: (String)"
+// Detect if the browser is IE or not.
+// If it is not IE, we assume that the browser is NS.
+var IE = document.all?true:false;
+
+// If NS -- that is, !IE -- then set up for mouse capture
+if (!IE) document.captureEvents(Event.MOUSEMOVE);
+
+// Set-up to use getMouseXY function onMouseMove
+document.onmousemove = getMouseXY;
+
+// Temporary variables to hold mouse x-y pos.s
+var tempX = 0;
+var tempY = 0;
+
+// Main function to retrieve mouse x-y pos.s
+var objHoverDiv = null;
+
+function ge"[truncated 647 chars]; line: 2, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipComment(ReaderBasedJsonParser.java:2436)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd2(ReaderBasedJsonParser.java:2411)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2382)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:672)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1246875 [ZAP-SpiderThreadPool-0-thread-2] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: mapping values are not allowed here
+ in 'string', line 3, column 11:
+    // License: http://www.opensource.org/lice ... 
+              ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:869)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.peekToken(ScannerImpl.java:250)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseDocumentEnd.produce(ParserImpl.java:253)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.getEvent(ParserImpl.java:168)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:87)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1246878 [ZAP-SpiderThreadPool-0-thread-2] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser)
+ at [Source: (String)"// ColorBox v1.3.20.2 - jQuery lightbox plugin
+// (c) 2012 Jack Moore - jacklmoore.com
+// License: http://www.opensource.org/licenses/mit-license.php
+(function ($, document, window) {
+	var
+	// Default settings object.
+	// See http://jacklmoore.com/colorbox for details.
+	defaults = {
+		transition: "elastic",
+		speed: 300,
+		width: false,
+		initialWidth: "600",
+		innerWidth: false,
+		maxWidth: false,
+		height: false,
+		initialHeight: "450",
+		innerHeight: false,
+		maxHeight: false,
+		scalePhotos: "[truncated 25518 chars]; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipComment(ReaderBasedJsonParser.java:2436)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd2(ReaderBasedJsonParser.java:2411)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2362)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:672)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1250468 [ZAP-SpiderThreadPool-0-thread-2] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: while scanning for the next token
+found character '\t(TAB)' that cannot start any token. (Do not use \t(TAB) for indentation)
+ in 'string', line 1, column 1:
+    	
+    ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:418)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:227)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseImplicitDocumentStart.produce(ParserImpl.java:195)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:107)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1250472 [ZAP-SpiderThreadPool-0-thread-2] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser)
+ at [Source: (String)"	
+	/***********************************************
+	* Bookmark site script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+	* This notice MUST stay intact for legal use
+	* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+	***********************************************/
+	
+	/* Modified heavily by Jeremy Druin */
+	function bookmarkSite(){
+	
+		try{
+			var lURL = document.location;
+			var lTitle = "Mutillidae";
+				
+			if (window.sidebar){ 
+				// f"[truncated 564 chars]; line: 2, column: 3]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipComment(ReaderBasedJsonParser.java:2436)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd2(ReaderBasedJsonParser.java:2411)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2382)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:672)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1250491 [ZAP-SpiderThreadPool-0-thread-2] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: mapping values are not allowed here
+ in 'string', line 5, column 110:
+     ... ame UL (level) contain sub menus: http://www.dynamicdrive.com/fo ... 
+                                         ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:869)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:227)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:558)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:214)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1250497 [ZAP-SpiderThreadPool-0-thread-2] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser)
+ at [Source: (String)"//** Smooth Navigational Menu- By Dynamic Drive DHTML code library: http://www.dynamicdrive.com
+//** Script Download/ instructions page: http://www.dynamicdrive.com/dynamicindex1/ddlevelsmenu/
+//** Menu created: Nov 12, 2008
+
+//** Dec 12th, 08" (v1.01): Fixed Shadow issue when multiple LIs within the same UL (level) contain sub menus: http://www.dynamicdrive.com/forums/showthread.php?t=39177&highlight=smooth
+
+//** Feb 11th, 09" (v1.02): The currently active main menu item (LI A) now gets a CSS c"[truncated 8138 chars]; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipComment(ReaderBasedJsonParser.java:2436)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd2(ReaderBasedJsonParser.java:2411)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2362)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:672)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1250520 [ZAP-SpiderThreadPool-0-thread-2] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: mapping values are not allowed here
+ in 'string', line 9, column 8:
+     * Date: 2009-02-19 17:34:21 -0500 (Thu ... 
+           ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:869)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.peekToken(ScannerImpl.java:250)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseDocumentEnd.produce(ParserImpl.java:253)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.getEvent(ParserImpl.java:168)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:87)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1250523 [ZAP-SpiderThreadPool-0-thread-2] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser)
+ at [Source: (StringReader); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipComment(ReaderBasedJsonParser.java:2436)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd2(ReaderBasedJsonParser.java:2411)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2362)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:672)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1250569 [ZAP-SpiderThreadPool-0-thread-2] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: mapping values are not allowed here
+ in 'string', line 12, column 8:
+     * Date: Tue Nov 13 2012 08:20:33 GMT-0 ... 
+           ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:869)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.peekToken(ScannerImpl.java:250)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseDocumentEnd.produce(ParserImpl.java:253)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.getEvent(ParserImpl.java:168)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:87)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1250582 [ZAP-SpiderThreadPool-0-thread-2] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser)
+ at [Source: (StringReader); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipComment(ReaderBasedJsonParser.java:2436)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd2(ReaderBasedJsonParser.java:2411)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2362)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:672)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1250583 [ZAP-SpiderThreadPool-0-thread-1] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: mapping values are not allowed here
+ in 'string', line 5, column 48:
+     ... d under the MIT and GPL licenses:
+                                         ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:869)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.peekToken(ScannerImpl.java:250)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseDocumentEnd.produce(ParserImpl.java:253)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.getEvent(ParserImpl.java:168)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:87)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1250586 [ZAP-SpiderThreadPool-0-thread-1] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser)
+ at [Source: (String)"/**
+ * Hover balloon on elements without css and images.
+ *
+ * Copyright (c) 2011 Hayato Takenaka
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ * @author: Hayato Takenaka (http://urin.take-uma.net)
+ * @version: 0.3.0 - 2012/02/25
+**/
+;(function($) {
+	//-----------------------------------------------------------------------------
+	// Private
+	//-------------------------------------------"[truncated 10837 chars]; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipComment(ReaderBasedJsonParser.java:2436)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd2(ReaderBasedJsonParser.java:2411)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2362)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:672)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1250607 [ZAP-SpiderThreadPool-0-thread-1] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: mapping values are not allowed here
+ in 'string', line 3, column 11:
+    // License: http://www.opensource.org/lice ... 
+              ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:869)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.peekToken(ScannerImpl.java:250)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseDocumentEnd.produce(ParserImpl.java:253)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.getEvent(ParserImpl.java:168)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:87)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1250609 [ZAP-SpiderThreadPool-0-thread-1] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser)
+ at [Source: (String)"// ColorBox v1.3.20.2 - jQuery lightbox plugin
+// (c) 2012 Jack Moore - jacklmoore.com
+// License: http://www.opensource.org/licenses/mit-license.php
+(function(a,b,c){function Z(c,d,e){var g=b.createElement(c);return d&&(g.id=f+d),e&&(g.style.cssText=e),a(g)}function $(a){var b=y.length,c=(Q+a)%b;return 0>c?b+c:c}function _(a,b){return Math.round((/%/.test(a)?("x"===b?z.width():z.height())/100:1)*parseInt(a,10))}function ab(a){return K.photo||/\.(gif|png|jp(e|g|eg)|bmp|ico)((#|\?).*)?$/i.test(a)"[truncated 9345 chars]; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipComment(ReaderBasedJsonParser.java:2436)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd2(ReaderBasedJsonParser.java:2411)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2362)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:672)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1261351 [ZAP-SpiderThreadPool-0-thread-1] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: while scanning for the next token
+found character '\t(TAB)' that cannot start any token. (Do not use \t(TAB) for indentation)
+ in 'string', line 20, column 1:
+    	if (IE) { // grab the x-y pos.s ... 
+    ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:418)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.peekToken(ScannerImpl.java:250)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseDocumentEnd.produce(ParserImpl.java:253)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.getEvent(ParserImpl.java:168)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:87)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1261357 [ZAP-SpiderThreadPool-0-thread-1] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser)
+ at [Source: (String)"
+// Detect if the browser is IE or not.
+// If it is not IE, we assume that the browser is NS.
+var IE = document.all?true:false;
+
+// If NS -- that is, !IE -- then set up for mouse capture
+if (!IE) document.captureEvents(Event.MOUSEMOVE);
+
+// Set-up to use getMouseXY function onMouseMove
+document.onmousemove = getMouseXY;
+
+// Temporary variables to hold mouse x-y pos.s
+var tempX = 0;
+var tempY = 0;
+
+// Main function to retrieve mouse x-y pos.s
+var objHoverDiv = null;
+
+function ge"[truncated 647 chars]; line: 2, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipComment(ReaderBasedJsonParser.java:2436)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd2(ReaderBasedJsonParser.java:2411)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2382)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:672)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1265749 [ZAP-SpiderThreadPool-0-thread-2] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: while parsing a block mapping
+ in 'string', line 1, column 1:
+    (function(b){b.gritter={};b.grit ... 
+    ^
+expected <block end>, but found '<scalar>'
+ in 'string', line 1, column 230:
+     ... r Error: "+d;(typeof(console)!="undefined"&&console.error)?conso ... 
+                                         ^
+
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:570)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:214)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1265755 [ZAP-SpiderThreadPool-0-thread-2] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('(' (code 40)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"(function(b){b.gritter={};b.gritter.options={position:"",class_name:"",fade_in_speed:"medium",fade_out_speed:1000,time:6000};b.gritter.add=function(f){try{return a.add(f||{})}catch(d){var c="Gritter Error: "+d;(typeof(console)!="undefined"&&console.error)?console.error(c,f):alert(c)}};b.gritter.remove=function(d,c){a.removeSpecific(d,c||{})};b.gritter.removeAll=function(c){a.stop(c||{})};var a={position:"",fade_in_speed:"",fade_out_speed:"",time:"",_custom_timer:0,_item_count:0,_is_setup:0,_tpl_"[truncated 3748 chars]; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1917)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:773)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1274981 [ZAP-SpiderThreadPool-0-thread-1] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: while parsing a block mapping
+ in 'string', line 1, column 1:
+    try{var topdomain=top.document.d ... 
+    ^
+expected <block end>, but found '<scalar>'
+ in 'string', line 1, column 322:
+     ... ,self.document.URL.lastIndexOf("/")+1))};
+                                         ^
+
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:570)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:214)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1274984 [ZAP-SpiderThreadPool-0-thread-1] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'try': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"try{var topdomain=top.document.domain;if(topdomain!=self.document.domain){alert("Redirecting...");top.location.replace(self.document.URL.substring(0,self.document.URL.lastIndexOf("/")+1))}}catch(e$$5){alert("Redirecting... (error: "+e$$5);top.location.replace(self.document.URL.substring(0,self.document.URL.lastIndexOf("/")+1))};
+"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:722)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2868)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2846)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._matchToken(ReaderBasedJsonParser.java:2627)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._matchTrue(ReaderBasedJsonParser.java:2579)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:741)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1275015 [ZAP-SpiderThreadPool-0-thread-2] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: mapping values are not allowed here
+ in 'string', line 20, column 507:
+     ... tion(j){return j==null?String(j):
+                                         ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:869)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.peekToken(ScannerImpl.java:250)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseDocumentEnd.produce(ParserImpl.java:253)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.getEvent(ParserImpl.java:168)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:87)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1275020 [ZAP-SpiderThreadPool-0-thread-2] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('(' (code 40)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (StringReader); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1917)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:773)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1275022 [ZAP-SpiderThreadPool-0-thread-1] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: mapping values are not allowed here
+ in 'string', line 4, column 507:
+     ... upport.selectstart?"selectstart":
+                                         ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:869)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.peekToken(ScannerImpl.java:250)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseDocumentEnd.produce(ParserImpl.java:253)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.getEvent(ParserImpl.java:168)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:87)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1275027 [ZAP-SpiderThreadPool-0-thread-1] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('(' (code 40)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (StringReader); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1917)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:773)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1275055 [ZAP-SpiderThreadPool-0-thread-2] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'var': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"var hash_to_set="",hash_init_done=0;function setURLHash(a){if(!jQuery.browser.webkit)if(window.parent!=window&&window.parent.setURLHash)window.parent.setURLHash(a);else{var b=window.location.pathname;if(b.substring(b.length-9,b.length)=="index.php")if(hash_init_done){window.location.hash="PMAURL:"+a;fix_favicon()}else hash_to_set="PMAURL:"+a}}function fix_favicon(){jQuery.browser.mozilla&&$("head > link[href=\\.\\/favicon\\.ico]").appendTo("head")}
+$(document).ready(function(){if(!(window.parent"[truncated 258 chars]; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:722)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2868)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1914)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:773)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1275069 [ZAP-SpiderThreadPool-0-thread-1] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: mapping values are not allowed here
+ in 'string', line 14, column 501:
+     ... "")return confirmQuery(a,b)?true:
+                                         ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:869)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.peekToken(ScannerImpl.java:250)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseDocumentEnd.produce(ParserImpl.java:253)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.getEvent(ParserImpl.java:168)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:87)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1275071 [ZAP-SpiderThreadPool-0-thread-1] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'var': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (StringReader); line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:722)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2868)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1914)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:773)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1275173 [ZAP-SpiderThreadPool-0-thread-2] WARN io.swagger.parser.util.DeserializationUtils  - Error snake-parsing yaml content
+io.swagger.parser.util.DeserializationUtils$SnakeException: Exception safe-checking yaml content  (maxDepth 2000)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:300)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:438)
+	at io.swagger.parser.util.DeserializationUtils.readYamlTree(DeserializationUtils.java:137)
+	at io.swagger.parser.Swagger20Parser.deserializeYaml(Swagger20Parser.java:83)
+	at io.swagger.parser.Swagger20Parser.convertToSwagger(Swagger20Parser.java:125)
+	at io.swagger.parser.Swagger20Parser.parse(Swagger20Parser.java:156)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:139)
+	at io.swagger.parser.SwaggerParser.parse(SwaggerParser.java:133)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:195)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: mapping values are not allowed here
+ in 'string', line 37, column 248:
+     ... th="'+a+'" style="vertical-align: top"></canvas>';else if(b.brow ... 
+                                         ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:869)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.peekToken(ScannerImpl.java:250)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseDocumentEnd.produce(ParserImpl.java:253)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.getEvent(ParserImpl.java:168)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:87)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at io.swagger.parser.util.DeserializationUtils$CustomSnakeYamlConstructor.getSingleData(DeserializationUtils.java:279)
+	... 18 more
+1275177 [ZAP-SpiderThreadPool-0-thread-2] ERROR io.swagger.parser.SwaggerCompatConverter  - failed to read resource listing
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('(' (code 40)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (StringReader); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1917)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:773)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2711)
+	at io.swagger.parser.SwaggerCompatConverter.readResourceListing(SwaggerCompatConverter.java:210)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:123)
+	at io.swagger.parser.SwaggerCompatConverter.read(SwaggerCompatConverter.java:114)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.convertV1ToV2(SwaggerConverter.java:216)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getOpenAPI(SwaggerConverter.java:197)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.readOpenAPISpec(SwaggerConverter.java:170)
+	at org.zaproxy.zap.extension.openapi.converter.swagger.SwaggerConverter.getRequestModels(SwaggerConverter.java:157)
+	at org.zaproxy.zap.extension.openapi.OpenApiSpider.parseResource(OpenApiSpider.java:55)
+	at org.zaproxy.zap.spider.SpiderTask.processResource(SpiderTask.java:415)
+	at org.zaproxy.zap.spider.SpiderTask.runImpl(SpiderTask.java:267)
+	at org.zaproxy.zap.spider.SpiderTask.run(SpiderTask.java:190)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+1280693 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - Checkpoint start
+1280694 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - checkpointClose start
+1280702 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - checkpointClose synched
+1280713 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - checkpointClose script done
+1280713 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - dataFileCache commit start
+1280980 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - dataFileCache commit end
+1280999 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - checkpointClose end
+1281001 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - Checkpoint end - txts: 60552
+1282852 [ZAP-SpiderThreadPool-0-thread-2] INFO org.zaproxy.zap.spider.Spider  - Spidering process is complete. Shutting down...
+1282854 [ZAP-SpiderShutdownThread-0] INFO org.zaproxy.zap.extension.spider.SpiderThread  - Spider scanning complete: true
+2203584 [Thread-63] INFO com.sittinglittleduck.DirBuster.Manager  - Starting dir/file list based brute forcing
+2204229 [DirBuster-Worker] WARN com.sittinglittleduck.DirBuster.Manager  - http://192.168.56.104:80/1710052200/ - Return code for first HEAD, is different to the second GET: 501 - 503
+2204230 [DirBuster-Worker] WARN org.zaproxy.zap.extension.bruteforce.DirBusterManager  - DirBusterManager.foundError http://192.168.56.104:80/1710052200/ reason:Return code for first HEAD, is different to the second GET: 501 - 503
+2225405 [DirBuster-Worker] WARN com.sittinglittleduck.DirBuster.Manager  - http://192.168.56.104:80/webgoat.net/ - Return code for first HEAD, is different to the second GET: 302 - 500
+2225405 [DirBuster-Worker] WARN org.zaproxy.zap.extension.bruteforce.DirBusterManager  - DirBusterManager.foundError http://192.168.56.104:80/webgoat.net/ reason:Return code for first HEAD, is different to the second GET: 302 - 500
+2226635 [DirBuster-Worker] WARN com.sittinglittleduck.DirBuster.Manager  - http://192.168.56.104:80/mono/ - Return code for first HEAD, is different to the second GET: 200 - 500
+2226636 [DirBuster-Worker] WARN org.zaproxy.zap.extension.bruteforce.DirBusterManager  - DirBusterManager.foundError http://192.168.56.104:80/mono/ reason:Return code for first HEAD, is different to the second GET: 200 - 500
+2232237 [DirBuster-Worker] WARN com.sittinglittleduck.DirBuster.Manager  - http://192.168.56.104:80/WackoPicko/pic' + 'check' + '.php - IllegalArgumentException Invalid uri 'http://192.168.56.104:80/WackoPicko/pic' + 'check' + '.php': escaped absolute path not valid
+2232237 [DirBuster-Worker] WARN org.zaproxy.zap.extension.bruteforce.DirBusterManager  - DirBusterManager.foundError http://192.168.56.104:80/WackoPicko/pic' + 'check' + '.php reason:IllegalArgumentException Invalid uri 'http://192.168.56.104:80/WackoPicko/pic' + 'check' + '.php': escaped absolute path not valid
+2331755 [DirBuster-Worker] WARN com.sittinglittleduck.DirBuster.Manager  - http://192.168.56.104:80/zapwave/active/inject/inject-sql-url-basic.jsp - Return code for first HEAD, is different to the second GET: 500 - 200
+2331755 [DirBuster-Worker] WARN org.zaproxy.zap.extension.bruteforce.DirBusterManager  - DirBusterManager.foundError http://192.168.56.104:80/zapwave/active/inject/inject-sql-url-basic.jsp reason:Return code for first HEAD, is different to the second GET: 500 - 200
+2331776 [DirBuster-Worker] WARN com.sittinglittleduck.DirBuster.Manager  - http://192.168.56.104:80/zapwave/active/inject/inject-sql-form-basic.jsp - Return code for first HEAD, is different to the second GET: 500 - 200
+2331776 [DirBuster-Worker] WARN org.zaproxy.zap.extension.bruteforce.DirBusterManager  - DirBusterManager.foundError http://192.168.56.104:80/zapwave/active/inject/inject-sql-form-basic.jsp reason:Return code for first HEAD, is different to the second GET: 500 - 200
+2430024 [DirBuster-Worker] WARN com.sittinglittleduck.DirBuster.Manager  - http://192.168.56.104:80/mutillidae/documentation/\'http:/ - IllegalArgumentException Invalid uri 'http://192.168.56.104:80/mutillidae/documentation/\'http:/': escaped absolute path not valid
+2430024 [DirBuster-Worker] WARN org.zaproxy.zap.extension.bruteforce.DirBusterManager  - DirBusterManager.foundError http://192.168.56.104:80/mutillidae/documentation/\'http:/ reason:IllegalArgumentException Invalid uri 'http://192.168.56.104:80/mutillidae/documentation/\'http:/': escaped absolute path not valid
+2430141 [DirBuster-Worker] WARN com.sittinglittleduck.DirBuster.Manager  - http://192.168.56.104:80/mutillidae/documentation/\'http:// - IllegalArgumentException Invalid uri 'http://192.168.56.104:80/mutillidae/documentation/\'http://': escaped absolute path not valid
+2430141 [DirBuster-Worker] WARN org.zaproxy.zap.extension.bruteforce.DirBusterManager  - DirBusterManager.foundError http://192.168.56.104:80/mutillidae/documentation/\'http:// reason:IllegalArgumentException Invalid uri 'http://192.168.56.104:80/mutillidae/documentation/\'http://': escaped absolute path not valid
+2430172 [DirBuster-HTMLparse] ERROR org.zaproxy.zap.ZAP$UncaughtExceptionLogger  - Exception in thread "DirBuster-HTMLparse"
+java.lang.IllegalArgumentException: Invalid uri 'http://192.168.56.104:80/mutillidae/documentation/\'http://thereIsNoWayThat-You-CanBeThere/': escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.<init>(HttpMethodBase.java:243)
+	at org.apache.commons.httpclient.methods.GetMethod.<init>(GetMethod.java:89)
+	at com.sittinglittleduck.DirBuster.GenBaseCase.genBaseCase(GenBaseCase.java:107)
+	at com.sittinglittleduck.DirBuster.HTMLparse.findBaseCasePoint(HTMLparse.java:290)
+	at com.sittinglittleduck.DirBuster.HTMLparse.run(HTMLparse.java:169)
+2487926 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - Checkpoint start
+2487926 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - checkpointClose start
+2487931 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - checkpointClose synched
+2487936 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - checkpointClose script done
+2487936 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - dataFileCache commit start
+2488261 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - dataFileCache commit end
+2488274 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - checkpointClose end
+2488274 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - Checkpoint end - txts: 424978
+2724139 [Thread-63] INFO com.sittinglittleduck.DirBuster.Manager  - DirBuster Stopped
+2725165 [Thread-63] INFO org.zaproxy.zap.extension.bruteforce.BruteForce  - BruteForce : http://192.168.56.104 finished
+3709224 [AWT-EventQueue-0] INFO org.zaproxy.zap.extension.fuzz.httpfuzzer.HttpFuzzer  - Fuzzer started...
+3721077 [ZAP-FuzzerTerminationNotifier-0] INFO org.zaproxy.zap.extension.fuzz.httpfuzzer.HttpFuzzer  - Fuzzer completed.
+4249240 [ZAP-ProxyThread-75] WARN org.parosproxy.paros.core.proxy.ProxyThread  - Failed to write/forward the HTTP response to the client: java.net.SocketException: Broken pipe (Write failed)
+4250357 [ZAP-ProxyThread-79] WARN org.parosproxy.paros.core.proxy.ProxyThread  - Failed to write/forward the HTTP response to the client: java.net.SocketException: Broken pipe (Write failed)
+6224706 [ZAP-ProxyThread-97] WARN org.parosproxy.paros.core.proxy.ProxyThread  - Failed to write/forward the HTTP response to the client: java.net.SocketException: Broken pipe (Write failed)
+6860706 [AWT-EventQueue-0] INFO org.parosproxy.paros.core.scanner.Scanner  - scanner started
+6860988 [Thread-162] INFO org.parosproxy.paros.core.scanner.HostProcess  - Scanning 150 node(s) from https://192.168.56.104
+6860989 [Thread-162] INFO org.parosproxy.paros.core.scanner.HostProcess  - start host https://192.168.56.104 | TestPathTraversal strength MEDIUM threshold MEDIUM
+6878664 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - Checkpoint start
+6878664 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - checkpointClose start
+6878666 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - checkpointClose synched
+6878687 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - checkpointClose script done
+6878687 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - dataFileCache commit start
+6879618 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - dataFileCache commit end
+6879640 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - checkpointClose end
+6879642 [HSQLDB Timer @24111e4a] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - Checkpoint end - txts: 504086
+6934281 [AWT-EventQueue-0] INFO org.parosproxy.paros.core.scanner.Scanner  - scanner stopped
+6934455 [Thread-162] INFO org.parosproxy.paros.core.scanner.HostProcess  - stopped host/plugin https://192.168.56.104 | TestPathTraversal in 73.466s with 575 message(s) sent and 11 alert(s) raised.
+6940644 [Thread-162] INFO org.parosproxy.paros.core.scanner.HostProcess  - completed host https://192.168.56.104 in 79.9s with 11 alert(s) raised.
+6940644 [Thread-161] INFO org.parosproxy.paros.core.scanner.Scanner  - scanner completed in 79.937s
+6969212 [AWT-EventQueue-0] INFO org.parosproxy.paros.control.Control  - Discard Session
+6970870 [ZAP-Shutdown] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - dataFileCache commit start
+6970974 [ZAP-Shutdown] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - dataFileCache commit end
+6971000 [ZAP-Shutdown] INFO hsqldb.db.HSQLDB379AF3DEBD.ENGINE  - Database closed
+6971118 [ZAP-Shutdown] INFO org.parosproxy.paros.control.Control  - OWASP ZAP 2.9.0 terminated.
